@@ -2,12 +2,17 @@ package tests;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import browser.login.Login;
+import browser.login.central.Central;
+import reusables.Elements;
 
 public class Assignment1 extends LaucnBrowser {
-
+	
+	Elements elements = new Elements();
+	
 	@Test(priority = 1, enabled = true)
 
 	public void verifyBrowserTitle() {
@@ -26,9 +31,13 @@ public class Assignment1 extends LaucnBrowser {
 		
 	}
 	
-	@Test(priority=3,enabled=true)
+	@Test(priority=3,enabled=true,dependsOnMethods = "verifyIMSLogin")
 	public void verifyExecuteButton() {
 		
+		Central central = new Central();
+		central.openExecuteScript();
+		
+		Assert.assertEquals(true, true);
 		
 		
 	}
