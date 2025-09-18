@@ -11,6 +11,11 @@
 
 	<name> My Selenium Assignment </name>
 
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
 	<scm>
 		<connection>scm:git:git@github.com:Chiragkumarj/selenium_assignments.git</connection>
 		<developerConnection>scm:git:git@github.com:Chiragkumarj/selenium_assignments.git</developerConnection>
@@ -31,7 +36,11 @@
 			<version>4.35.0</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.9.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
