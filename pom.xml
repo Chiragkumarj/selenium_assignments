@@ -11,6 +11,12 @@
 
 	<name> My Selenium Assignment </name>
 
+	<scm>
+		<connection>scm:git:git@github.com:Chiragkumarj/selenium_assignments.git</connection>
+		<developerConnection>scm:git:git@github.com:Chiragkumarj/selenium_assignments.git</developerConnection>
+		<url>https://github.com/Chiragkumarj/selenium_assignments</url>
+	</scm>
+
 	<dependencies>
 
 		<dependency>
@@ -27,6 +33,16 @@
 
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>2.1.0</version>
+			</plugin>
+		</plugins>
+	</build>
 
 
 </project>
